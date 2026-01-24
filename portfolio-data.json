@@ -1,0 +1,144 @@
+{
+  "profile": {
+    "title": { "en": "Software Developer", "es": "Desarrollador de Software" },
+    "bio": {
+      "en": "Developer with 5+ years of total professional history. Specialized in OutSystems and back-end development. Proven track record in top consulting firms like NTT DATA, Fujitsu, and PSS.",
+      "es": "Desarrollador con más de 5 años de trayectoria profesional. Especializado en OutSystems y desarrollo back-end. Experiencia contrastada en consultoras líderes como NTT DATA, Fujitsu y PSS."
+    }
+  },
+  "experience": [
+    {
+      "company": "PSS Value Added Technological Services",
+      "period": { "en": "Mar 2025 - Present", "es": "Mar 2025 - Actualidad" },
+      "role": { "en": "Software Developer", "es": "Desarrollador de Software" },
+      "desc": {
+        "en": "Full-stack enterprise application development and workflow architecture optimization using OutSystems ODC.",
+        "es": "Desarrollo full-stack de aplicaciones empresariales y optimización de arquitectura de flujos usando OutSystems ODC."
+      }
+    },
+    {
+      "company": "Altia Consultores S.A.",
+      "period": { "en": "May 2023 - Mar 2024", "es": "May 2023 - Mar 2024" },
+      "role": { "en": "Software Consultant", "es": "Consultor de Software" },
+      "desc": {
+        "en": "High-impact development for complex public sector digital systems.",
+        "es": "Desarrollo de alto impacto para sistemas digitales complejos del sector público."
+      }
+    },
+    {
+      "company": "Fujitsu Technology Solutions S.A.",
+      "period": { "en": "Jan 2022 - May 2023", "es": "Ene 2022 - May 2023" },
+      "role": {
+        "en": "OutSystems Specialist",
+        "es": "Especialista OutSystems"
+      },
+      "desc": {
+        "en": "Scalable enterprise software solutions and database performance tuning.",
+        "es": "Soluciones de software empresarial escalable y ajuste de rendimiento de bases de datos."
+      }
+    },
+    {
+      "company": "NTT DATA Spain Centers S.L.U.",
+      "period": { "en": "Mar 2021 - Jan 2022", "es": "Mar 2021 - Ene 2022" },
+      "role": { "en": "Junior Developer", "es": "Desarrollador Junior" },
+      "desc": {
+        "en": "System integrations and business logic automation.",
+        "es": "Integraciones de sistemas y automatización de lógica de negocio."
+      }
+    }
+  ],
+  "skills": [
+    "OutSystems ODC",
+    "TSQL / SQL Server",
+    "Back-end Dev",
+    "JavaScript",
+    "Python",
+    "Go (Golang)",
+    "Azure Cloud",
+    "Agile / Scrum"
+  ],
+  "languages": [
+    {
+      "name": { "en": "Spanish", "es": "Español" },
+      "level": { "en": "Native", "es": "Nativo" }
+    },
+    {
+      "name": { "en": "English", "es": "Inglés" },
+      "level": { "en": "Native / C2", "es": "Nativo / C2" }
+    },
+    {
+      "name": { "en": "Catalan", "es": "Catalán" },
+      "level": { "en": "Native", "es": "Nativo" }
+    },
+    {
+      "name": { "en": "Japanese", "es": "Japonés" },
+      "level": { "en": "Basic", "es": "Básico" }
+    },
+    {
+      "name": { "en": "Dutch", "es": "Neerlandés" },
+      "level": { "en": "Basic", "es": "Básico" }
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "HevyStats Analytics",
+      "tech": ["Back-end", "SQL", "JavaScript"],
+      "images": ["hevystat1.png", "hevystat2.png"],
+      "desc": {
+        "en": "Full-stack fitness data visualization platform.",
+        "es": "Plataforma full-stack de visualización de datos fitness."
+      },
+      "summary": {
+        "en": "Transforms Hevy app exports into interactive analytics via an ETL pipeline and PostgreSQL database.",
+        "es": "Transforma exportaciones de Hevy en analíticas interactivas mediante un pipeline ETL y base de datos PostgreSQL."
+      },
+      "links": ["https://github.com/fabianluz/HevyStats"]
+    },
+    {
+      "id": 2,
+      "title": "OS AI Architect",
+      "tech": ["OutSystems", "Python", "SQL"],
+      "images": ["out1.png", "out2.png"],
+      "desc": {
+        "en": "AI-powered microservice for OutSystems prototyping.",
+        "es": "Microservicio de IA para prototipado en OutSystems."
+      },
+      "summary": {
+        "en": "Generates Entity Blueprints and T-SQL scripts from natural language descriptions using GPT-4.",
+        "es": "Genera esquemas de entidades y scripts T-SQL a partir de descripciones en lenguaje natural usando GPT-4."
+      },
+      "links": ["https://github.com/fabianluz/outsystems-ai-architect"]
+    },
+    {
+      "id": 3,
+      "title": "OtakuDash",
+      "tech": ["Python", "Front-end"],
+      "images": ["animedashboard1.png"],
+      "desc": {
+        "en": "Desktop anime release schedule tracker.",
+        "es": "Rastreador de lanzamientos de anime para escritorio."
+      },
+      "summary": {
+        "en": "Modern Python application using CustomTkinter and Jikan API.",
+        "es": "Aplicación Python moderna que usa CustomTkinter y la API Jikan."
+      },
+      "links": ["https://github.com/fabianluz/Anime-Dashboard"]
+    },
+    {
+      "id": 4,
+      "title": "Kanban TUI",
+      "tech": ["Go", "Back-end"],
+      "images": ["TUI1.png"],
+      "desc": {
+        "en": "Terminal-based keyboard-centric Kanban board.",
+        "es": "Tablero Kanban para terminal centrado en teclado."
+      },
+      "summary": {
+        "en": "Lightweight TUI built with Go and the Charm ecosystem.",
+        "es": "TUI ligera construida con Go y el ecosistema Charm."
+      },
+      "links": ["https://github.com/fabianluz/kanban-tui"]
+    }
+  ]
+}

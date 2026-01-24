@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabian Luz | LUZ_OS v4.1</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <nav>
+        <div class="gaming-font" style="color: var(--accent); font-weight: bold;">LUZ_OS</div>
+        <div class="nav-links">
+            <a href="#about" data-i18n="nav_about">Bio</a>
+            <a href="#skills" data-i18n="nav_skills">Skills</a>
+            <a href="#languages" data-i18n="nav_lang">Languages</a>
+            <a href="#experience" data-i18n="nav_exp">Exp</a>
+            <a href="#projects" data-i18n="nav_proj">Vault</a>
+        </div>
+        <div class="header-controls">
+            <button class="btn-ui" id="lang-btn"><span id="lang-label">ESP</span></button>
+            <button class="btn-ui" id="theme-btn"><i data-lucide="sun" id="theme-icon"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero visible">
+            <h1 id="hero-name">Fabian Luz</h1>
+            <p id="hero-title" class="gaming-font">Loading Modules...</p>
+        </section>
+
+        <div class="container">
+            <section id="about">
+                <div class="section-header">
+                    <h2><i data-lucide="terminal"></i> <span data-i18n="about">Biography</span></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="glass-card"><p id="bio-text" style="color: var(--text-secondary);"></p></div>
+            </section>
+
+            <section id="skills">
+                <div class="section-header">
+                    <h2><i data-lucide="zap"></i> <span data-i18n="skills">Skill Tree</span></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="grid-list" id="skills-list"></div>
+            </section>
+
+            <section id="languages">
+                <div class="section-header">
+                    <h2><i data-lucide="globe"></i> <span data-i18n="languages">Communication</span></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="grid-list" id="languages-list"></div>
+            </section>
+
+            <section id="experience">
+                <div class="section-header">
+                    <h2><i data-lucide="scroll-text"></i> <span data-i18n="exp">Experience</span></h2>
+                    <div class="line"></div>
+                </div>
+                <div id="experience-list" class="experience-timeline"></div>
+            </section>
+
+            <section id="projects">
+                <div class="section-header">
+                    <h2><i data-lucide="layout"></i> <span data-i18n="proj">Project Vault</span></h2>
+                    <div class="line"></div>
+                </div>
+                
+                <div class="vault-controls">
+                    <div class="filter-wrapper">
+                        <div class="header-controls" id="filter-group">
+                            <button class="btn-ui active" data-filter="all">All</button>
+                            <button class="btn-ui" data-filter="OutSystems">OutSystems</button>
+                            <button class="btn-ui" data-filter="SQL">SQL</button>
+                            <button class="btn-ui" data-filter="Python">Python</button>
+                            <button class="btn-ui" data-filter="Go">Go</button>
+                            <button class="btn-ui" data-filter="JavaScript">JavaScript</button>
+                        </div>
+                    </div>
+                    <div class="search-wrapper">
+                        <input type="text" id="search-bar" class="search-input" placeholder="Search project database..." data-i18n-placeholder="search_placeholder">
+                        <i data-lucide="search" class="search-icon"></i>
+                    </div>
+                </div>
+
+                <div class="project-grid" id="project-list"></div>
+            </section>
+        </div>
+    </main>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="close-modal" id="modal-close"><i data-lucide="x-circle"></i></div>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()"><img id="lightbox-img" src=""></div>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 50px 0;">
+            <p class="gaming-font" style="font-size: 0.7rem; color: var(--text-secondary);">SYSTEM_VERSION: 4.1 // SYNC_COMPLETED</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
