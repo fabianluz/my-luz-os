@@ -139,6 +139,21 @@
         "es": "TUI ligera construida con Go y el ecosistema Charm."
       },
       "links": ["https://github.com/fabianluz/kanban-tui"]
+    },
+    {
+      "id": 5,
+      "title": "MathWizard Extension",
+      "tech": ["C#", ".NET", "OutSystems"],
+      "images": ["MathWizard1.png", "Mathwizard2.png"],
+      "desc": {
+        "en": "High-performance C# math extension for OutSystems Developer Cloud.",
+        "es": "Extensión matemática de alto rendimiento en C# para OutSystems Developer Cloud."
+      },
+      "summary": {
+        "en": "Library providing advanced Linear Algebra, Bitwise operations, and Combinatorics to extend ODC low-code capabilities.",
+        "es": "Librería que proporciona Álgebra Lineal avanzada, operaciones Bitwise y Combinatoria para extender las capacidades low-code de ODC."
+      },
+      "links": ["https://github.com/fabianluz/MathWizard-ODC"]
     }
   ]
 }
