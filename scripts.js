@@ -46,6 +46,8 @@ const observer = new IntersectionObserver(
   { threshold: 0.1 },
 );
 
+// [scripts.js] Inside async function loadData()
+
 async function loadData() {
   try {
     const response = await fetch("portfolio-data.json");
@@ -58,6 +60,7 @@ async function loadData() {
       .forEach((section) => observer.observe(section));
 
     render();
+    lucide.createIcons(); // <--- ENSURE THIS IS CALLED HERE TO RENDER HERO ICONS
   } catch (err) {
     console.error(
       "Data load failed. Please run this using a local server (Live Server).",

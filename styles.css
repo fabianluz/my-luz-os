@@ -294,3 +294,95 @@ section.visible {
     align-items: stretch;
   }
 }
+/* [styles.css] Add this to the bottom of the file */
+
+/* --- Hero Actions & CV Buttons --- */
+.hero-actions {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: fadeUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+  opacity: 0; /* Starts hidden, animates in */
+  transform: translateY(20px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cv-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-hero {
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Primary Buttons (CVs) */
+.btn-hero.primary {
+  background: rgba(8, 145, 178, 0.1); /* Low opacity accent */
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 5px rgba(8, 145, 178, 0.2);
+}
+
+.btn-hero.primary:hover {
+  background: var(--accent);
+  color: var(--bg-color); /* Contrast text on hover */
+  box-shadow: 0 0 20px var(--accent); /* Neon Glow */
+  transform: translateY(-2px);
+}
+
+/* Secondary Button (GitHub) */
+.btn-hero.secondary {
+  background: transparent;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  padding: 10px 20px;
+}
+
+.btn-hero.secondary:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Icons inside buttons */
+.btn-hero i {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .cv-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-hero {
+    width: 100%;
+    justify-content: center;
+  }
+}
