@@ -98,7 +98,7 @@
     {
       "id": 2,
       "title": "OS AI Architect",
-      "tech": ["OutSystems", "Python", "SQL"],
+      "tech": ["OutSystems", "Python", "SQL", "AI"],
       "images": ["out1.png", "out2.png"],
       "desc": {
         "en": "AI-powered microservice for OutSystems prototyping.",
@@ -143,8 +143,8 @@
     {
       "id": 5,
       "title": "MathWizard Extension",
-      "tech": ["C#", ".NET", "OutSystems"],
-      "images": ["MathWizard1.png", "Mathwizard2.png"],
+      "tech": ["C#", ".NET", "OutSystems ODC", "AI"],
+      "images": ["image_3f90fc.png"],
       "desc": {
         "en": "High-performance C# math extension for OutSystems Developer Cloud.",
         "es": "Extensión matemática de alto rendimiento en C# para OutSystems Developer Cloud."
@@ -154,6 +154,21 @@
         "es": "Librería que proporciona Álgebra Lineal avanzada, operaciones Bitwise y Combinatoria para extender las capacidades low-code de ODC."
       },
       "links": ["https://github.com/fabianluz/MathWizard-ODC"]
+    },
+    {
+      "id": 6,
+      "title": "OutSystems AI Butler",
+      "tech": ["React", "TypeScript", "OutSystems", "AI"],
+      "images": ["butler_preview1.png"],
+      "desc": {
+        "en": "Local-first 'Digital Twin' for AI-assisted OutSystems development.",
+        "es": "'Gemelo Digital' local para el desarrollo en OutSystems asistido por IA."
+      },
+      "summary": {
+        "en": "Parses Service Studio XML to visualize Data Models and Logic Flows. Exports structured, hallucination-free JSON context to supercharge LLM code generation.",
+        "es": "Analiza XML de Service Studio para visualizar Modelos de Datos y Flujos Lógicos. Exporta contexto JSON estructurado y libre de alucinaciones para potenciar la generación de código con LLMs."
+      },
+      "links": ["https://github.com/fabianluz/outsystems-ai-butler"]
     }
   ]
 }
