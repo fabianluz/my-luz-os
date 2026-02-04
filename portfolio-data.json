@@ -1,6 +1,13 @@
 {
   "profile": {
     "title": { "en": "Software Developer", "es": "Desarrollador de Software" },
+    "status": {
+      "state": "busy",
+      "text": {
+        "en": "SYSTEM STATUS: BUSY // OPEN TO FREELANCE",
+        "es": "ESTADO DEL SISTEMA: OCUPADO // DISPONIBLE FREELANCE"
+      }
+    },
     "bio": {
       "en": "Developer with 5+ years of total professional history. Specialized in OutSystems and back-end development. Proven track record in top consulting firms like NTT DATA, Fujitsu, and PSS.",
       "es": "Desarrollador con más de 5 años de trayectoria profesional. Especializado en OutSystems y desarrollo back-end. Experiencia contrastada en consultoras líderes como NTT DATA, Fujitsu y PSS."
@@ -8,39 +15,47 @@
   },
   "experience": [
     {
+      "id": "exp-1",
       "company": "PSS Value Added Technological Services",
       "period": { "en": "Mar 2025 - Present", "es": "Mar 2025 - Actualidad" },
       "role": { "en": "Software Developer", "es": "Desarrollador de Software" },
+      "tags": ["OutSystems ODC", "C#", ".NET", "SQL"],
       "desc": {
         "en": "Full-stack enterprise application development and workflow architecture optimization using OutSystems ODC.",
         "es": "Desarrollo full-stack de aplicaciones empresariales y optimización de arquitectura de flujos usando OutSystems ODC."
       }
     },
     {
+      "id": "exp-2",
       "company": "Altia Consultores S.A.",
       "period": { "en": "May 2023 - Mar 2024", "es": "May 2023 - Mar 2024" },
       "role": { "en": "Software Consultant", "es": "Consultor de Software" },
+      "tags": [".NET", "C#", "SQL Server"],
       "desc": {
         "en": "High-impact development for complex public sector digital systems.",
         "es": "Desarrollo de alto impacto para sistemas digitales complejos del sector público."
       }
     },
     {
+      "id": "exp-3",
       "company": "Fujitsu Technology Solutions S.A.",
       "period": { "en": "Jan 2022 - May 2023", "es": "Ene 2022 - May 2023" },
       "role": {
         "en": "OutSystems Specialist",
         "es": "Especialista OutSystems"
       },
+      "tags": ["OutSystems", "SQL", "JavaScript"],
       "desc": {
         "en": "Scalable enterprise software solutions and database performance tuning.",
         "es": "Soluciones de software empresarial escalable y ajuste de rendimiento de bases de datos."
       }
     },
     {
+      "id": "exp-4",
       "company": "NTT DATA Spain Centers S.L.U.",
       "period": { "en": "Mar 2021 - Jan 2022", "es": "Mar 2021 - Ene 2022" },
       "role": { "en": "Junior Developer", "es": "Desarrollador Junior" },
+      "tags": ["Java", "SQL", "Spring"],
       "desc": {
         "en": "System integrations and business logic automation.",
         "es": "Integraciones de sistemas y automatización de lógica de negocio."
@@ -49,13 +64,15 @@
   ],
   "skills": [
     "OutSystems ODC",
-    "TSQL / SQL Server",
-    "Back-end Dev",
+    "SQL",
     "JavaScript",
     "Python",
-    "Go (Golang)",
-    "Azure Cloud",
-    "Agile / Scrum"
+    "Go",
+    "C#",
+    ".NET",
+    "AI",
+    "React",
+    "Azure"
   ],
   "languages": [
     {
@@ -83,8 +100,8 @@
     {
       "id": 1,
       "title": "Fat Bender",
-      "tech": ["React", "PWA", "Tailwind CSS", "JavaScript"],
-      "images": ["fatbender1.png", "fatbender2.png"],
+      "tech": ["React", "JavaScript", "Tailwind CSS"],
+      "images": ["assets/fatbender1.png", "assets/fatbender2.png"],
       "desc": {
         "en": "Clinical-grade body composition analyzer web app.",
         "es": "Aplicación web de análisis de composición corporal de grado clínico."
@@ -98,8 +115,8 @@
     {
       "id": 2,
       "title": "HevyStats Analytics",
-      "tech": ["Back-end", "SQL", "JavaScript"],
-      "images": ["hevystat1.png", "hevystat2.png"],
+      "tech": ["SQL", "JavaScript", "Python"],
+      "images": ["assets/hevystat1.png", "assets/hevystat2.png"],
       "desc": {
         "en": "Full-stack fitness data visualization platform.",
         "es": "Plataforma full-stack de visualización de datos fitness."
@@ -114,7 +131,7 @@
       "id": 3,
       "title": "OS AI Architect",
       "tech": ["OutSystems", "Python", "SQL", "AI"],
-      "images": ["out1.png", "out2.png"],
+      "images": ["assets/out1.png", "assets/out2.png"],
       "desc": {
         "en": "AI-powered microservice for OutSystems prototyping.",
         "es": "Microservicio de IA para prototipado en OutSystems."
@@ -128,8 +145,8 @@
     {
       "id": 4,
       "title": "OtakuDash",
-      "tech": ["Python", "Front-end"],
-      "images": ["animedashboard1.png"],
+      "tech": ["Python"],
+      "images": ["assets/animedashboard1.png"],
       "desc": {
         "en": "Desktop anime release schedule tracker.",
         "es": "Rastreador de lanzamientos de anime para escritorio."
@@ -143,8 +160,8 @@
     {
       "id": 5,
       "title": "Kanban TUI",
-      "tech": ["Go", "Back-end"],
-      "images": ["TUI1.png"],
+      "tech": ["Go"],
+      "images": ["assets/TUI1.png"],
       "desc": {
         "en": "Terminal-based keyboard-centric Kanban board.",
         "es": "Tablero Kanban para terminal centrado en teclado."
@@ -159,7 +176,7 @@
       "id": 6,
       "title": "MathWizard Extension",
       "tech": ["C#", ".NET", "OutSystems ODC", "AI"],
-      "images": ["image_3f90fc.png"],
+      "images": ["assets/image_3f90fc.png"],
       "desc": {
         "en": "High-performance C# math extension for OutSystems Developer Cloud.",
         "es": "Extensión matemática de alto rendimiento en C# para OutSystems Developer Cloud."
@@ -173,8 +190,8 @@
     {
       "id": 7,
       "title": "OutSystems AI Butler",
-      "tech": ["React", "TypeScript", "OutSystems", "AI"],
-      "images": ["butler_preview1.png"],
+      "tech": ["React", "OutSystems", "AI"],
+      "images": ["assets/butler_preview1.png"],
       "desc": {
         "en": "Local-first 'Digital Twin' for AI-assisted OutSystems development.",
         "es": "'Gemelo Digital' local para el desarrollo en OutSystems asistido por IA."

@@ -1,131 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabian Luz | LUZ_OS v4.1</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fabian Luz",
+        "jobTitle": "OutSystems & Software Developer",
+        "url": "https://github.com/fabianluz",
+        "sameAs": ["https://github.com/fabianluz"],
+        "knowsAbout": [
+          "OutSystems ODC",
+          "C#",
+          ".NET",
+          "Python",
+          "SQL",
+          "Go",
+          "Azure",
+          "Low-Code Development"
+        ],
+        "description": "Software Developer specialized in OutSystems ODC and back-end development with 5+ years of experience."
+      }
+    </script>
+
+    <title>Fabian Luz | LUZ_OS v4.1 | OutSystems & Software Developer</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Fabian Luz, specialized Software Developer in OutSystems ODC, .NET, Python, and SQL based in Spain."
+    />
+    <meta
+      name="keywords"
+      content="Fabian Luz, OutSystems, Software Developer, .NET, Python, SQL, Portfolio, LUZ_OS, Low-Code Architect, Full Stack .NET Engineer"
+    />
+    <meta name="author" content="Fabian Luz" />
+
+    <meta
+      property="og:title"
+      content="Fabian Luz | Software Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore LUZ_OS v4.1: The professional vault of an OutSystems & Full-Stack Specialist."
+    />
+    <meta property="og:image" content="assets/social-preview.png" />
+    <meta property="og:type" content="website" />
+
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body data-theme="light">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
     <nav>
-        <div class="gaming-font" style="color: var(--accent); font-weight: bold;">LUZ_OS</div>
-        <div class="nav-links">
-            <a href="#about" data-i18n="nav_about">Bio</a>
-            <a href="#skills" data-i18n="nav_skills">Skills</a>
-            <a href="#languages" data-i18n="nav_lang">Languages</a>
-            <a href="#experience" data-i18n="nav_exp">Exp</a>
-            <a href="#projects" data-i18n="nav_proj">Vault</a>
-        </div>
-        <div class="header-controls">
-            <button class="btn-ui" id="lang-btn"><span id="lang-label">ESP</span></button>
-            <button class="btn-ui" id="theme-btn"><i data-lucide="sun" id="theme-icon"></i></button>
-        </div>
+      <div class="gaming-font" style="color: var(--accent); font-weight: bold">
+        LUZ_OS
+      </div>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav_about">Bio</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#languages" data-i18n="nav_lang">Languages</a>
+        <a href="#experience" data-i18n="nav_exp">Exp</a>
+        <a href="#projects" data-i18n="nav_proj">Vault</a>
+      </div>
+      <div class="header-controls">
+        <button class="btn-ui" id="lang-btn" aria-label="Toggle Language">
+          <span id="lang-label">ESP</span>
+        </button>
+        <button class="btn-ui" id="theme-btn" aria-label="Toggle Dark Mode">
+          <i data-lucide="sun" id="theme-icon"></i>
+        </button>
+      </div>
     </nav>
 
     <main>
-        <section id="hero" class="hero visible">
-    <h1 id="hero-name">Fabian Luz</h1>
-    <p id="hero-title" class="gaming-font">Loading Modules...</p>
-
-    <div class="hero-actions">
-        <div class="cv-group">
-            <a href="English CV.pdf" download class="btn-hero primary">
-                <i data-lucide="download"></i> <span>Download CV (ENG)</span>
-            </a>
-            <a href="Spanish CV.pdf" download class="btn-hero primary">
-                <i data-lucide="download"></i> <span>Download CV (ESP)</span>
-            </a>
+      <section id="hero" class="hero visible">
+        <h1 id="hero-name">Fabian Luz</h1>
+        <div id="status-badge" class="status-badge">
+          <div class="status-dot"></div>
+          <span id="status-text">SYSTEM CHECK...</span>
         </div>
-        
-        <a href="https://github.com/fabianluz" target="_blank" class="btn-hero secondary">
+        <p
+          id="hero-title"
+          class="gaming-font"
+          style="margin-top: 15px; color: var(--text-secondary)"
+        >
+          Initializing...
+        </p>
+
+        <div class="hero-actions">
+          <div class="cv-group">
+            <a
+              href="assets/Fabian_Luz_OutSystems_Developer_CV.pdf"
+              download
+              class="btn-hero primary"
+              aria-label="Download English CV"
+            >
+              <i data-lucide="download"></i> <span>Download CV (ENG)</span>
+            </a>
+            <a
+              href="assets/Fabian_Luz_OutSystems_Developer_CV_Spanish.pdf"
+              download
+              class="btn-hero primary"
+              aria-label="Download Spanish CV"
+            >
+              <i data-lucide="download"></i> <span>Download CV (ESP)</span>
+            </a>
+          </div>
+          <a
+            href="https://github.com/fabianluz"
+            target="_blank"
+            class="btn-hero secondary"
+            aria-label="Visit GitHub Profile"
+          >
             <i data-lucide="github"></i> <span>Go to GitHub Projects</span>
-        </a>
-    </div>
-</section>
-
-        <div class="container">
-            <section id="about">
-                <div class="section-header">
-                    <h2><i data-lucide="terminal"></i> <span data-i18n="about">Biography</span></h2>
-                    <div class="line"></div>
-                </div>
-                <div class="glass-card"><p id="bio-text" style="color: var(--text-secondary);"></p></div>
-            </section>
-
-            <section id="skills">
-                <div class="section-header">
-                    <h2><i data-lucide="zap"></i> <span data-i18n="skills">Skill Tree</span></h2>
-                    <div class="line"></div>
-                </div>
-                <div class="grid-list" id="skills-list"></div>
-            </section>
-
-            <section id="languages">
-                <div class="section-header">
-                    <h2><i data-lucide="globe"></i> <span data-i18n="languages">Communication</span></h2>
-                    <div class="line"></div>
-                </div>
-                <div class="grid-list" id="languages-list"></div>
-            </section>
-
-            <section id="experience">
-                <div class="section-header">
-                    <h2><i data-lucide="scroll-text"></i> <span data-i18n="exp">Experience</span></h2>
-                    <div class="line"></div>
-                </div>
-                <div id="experience-list" class="experience-timeline"></div>
-            </section>
-
-            <section id="projects">
-                <div class="section-header">
-                    <h2><i data-lucide="layout"></i> <span data-i18n="proj">Project Vault</span></h2>
-                    <div class="line"></div>
-                </div>
-                
-                <div class="vault-controls">
-                    <div class="filter-wrapper">
-                        <div class="header-controls" id="filter-group">
-                            <button class="btn-ui active" data-filter="all">All</button>
-                            <button class="btn-ui" data-filter="OutSystems">OutSystems</button>
-                            <button class="btn-ui" data-filter="SQL">SQL</button>
-                            <button class="btn-ui" data-filter="Python">Python</button>
-                            <button class="btn-ui" data-filter="Go">Go</button>
-                            <button class="btn-ui" data-filter="JavaScript">JavaScript</button>
-                            <button class="btn-ui" data-filter="TypeScript">TypeScript</button>
-                            <button class="btn-ui" data-filter="C#">C#</button>
-                            <button class="btn-ui" data-filter=".NET">.NET</button>
-                            <button class="btn-ui" data-filter="AI">AI</button>
-                            <button class="btn-ui" data-filter="React">.React</button>
-                            
-                        </div>
-                    </div>
-                    <div class="search-wrapper">
-                        <input type="text" id="search-bar" class="search-input" placeholder="Search project database..." data-i18n-placeholder="search_placeholder">
-                        <i data-lucide="search" class="search-icon"></i>
-                    </div>
-                </div>
-
-                <div class="project-grid" id="project-list"></div>
-            </section>
+          </a>
         </div>
+      </section>
+
+      <div class="container">
+        <section id="about">
+          <div class="section-header">
+            <h2>
+              <i data-lucide="terminal"></i>
+              <span data-i18n="about">Biography</span>
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="glass-card">
+            <p id="bio-text" style="color: var(--text-secondary)">
+              Fabian Luz is a specialized Software Developer based in Spain with
+              5+ years of experience. Expert in OutSystems ODC, Back-end
+              Development, C#, and Python. (Loading...)
+            </p>
+          </div>
+        </section>
+
+        <section id="skills">
+          <div class="section-header">
+            <h2>
+              <i data-lucide="zap"></i>
+              <span data-i18n="skills">Skill Tree</span>
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="grid-list" id="skills-list">
+            <p style="color: var(--text-secondary); grid-column: 1 / -1">
+              Key Skills: OutSystems ODC, SQL, JavaScript, Python, Go, C#, .NET,
+              Azure Cloud.
+            </p>
+          </div>
+        </section>
+
+        <section id="languages">
+          <div class="section-header">
+            <h2>
+              <i data-lucide="globe"></i>
+              <span data-i18n="languages">Communication</span>
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="grid-list" id="languages-list">
+            <p style="color: var(--text-secondary); grid-column: 1 / -1">
+              Languages: Spanish, English, Catalan.
+            </p>
+          </div>
+        </section>
+
+        <section id="experience">
+          <div class="section-header">
+            <h2>
+              <i data-lucide="scroll-text"></i>
+              <span data-i18n="exp">Experience</span>
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div id="experience-list" class="experience-timeline">
+            <div class="glass-card"><p>Loading Career History...</p></div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div class="section-header">
+            <h2>
+              <i data-lucide="layout"></i>
+              <span data-i18n="proj">Project Vault</span>
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="vault-controls">
+            <div class="filter-wrapper">
+              <div class="header-controls" id="filter-group">
+                <button class="btn-ui active" data-filter="all">All</button>
+                <button class="btn-ui" data-filter="OutSystems">
+                  OutSystems
+                </button>
+                <button class="btn-ui" data-filter="SQL">SQL</button>
+                <button class="btn-ui" data-filter="Python">Python</button>
+                <button class="btn-ui" data-filter="Go">Go</button>
+                <button class="btn-ui" data-filter="JavaScript">
+                  JavaScript
+                </button>
+                <button class="btn-ui" data-filter="TypeScript">
+                  TypeScript
+                </button>
+                <button class="btn-ui" data-filter="C#">C#</button>
+                <button class="btn-ui" data-filter=".NET">.NET</button>
+                <button class="btn-ui" data-filter="AI">AI</button>
+                <button class="btn-ui" data-filter="React">.React</button>
+              </div>
+            </div>
+            <div class="search-wrapper">
+              <input
+                type="text"
+                id="search-bar"
+                class="search-input"
+                placeholder="Search project database..."
+                data-i18n-placeholder="search_placeholder"
+                aria-label="Search Projects"
+              />
+              <i data-lucide="search" class="search-icon"></i>
+            </div>
+          </div>
+          <div class="project-grid" id="project-list"></div>
+        </section>
+
+        <section class="container" style="margin-bottom: 30px">
+          <div class="system-log-container">
+            <div class="system-log-header">
+              <div style="display: flex; align-items: center; gap: 8px">
+                <i
+                  data-lucide="activity"
+                  style="width: 14px; color: var(--accent)"
+                ></i>
+                <span>SYSTEM_KERNEL_LOG // GITHUB_ACTIVITY_STREAM</span>
+              </div>
+              <div style="font-size: 0.6rem; color: #666">LIVE_FEED</div>
+            </div>
+            <div id="github-log" class="system-log-feed">
+              <div class="log-entry">
+                Initializing connection to GitHub API...
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <div id="project-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="close-modal" id="modal-close"><i data-lucide="x-circle"></i></div>
-            <div id="modal-body"></div>
+      <div class="modal-content">
+        <div class="close-modal" id="modal-close" aria-label="Close Modal">
+          <i data-lucide="x-circle"></i>
         </div>
+        <div id="modal-body"></div>
+      </div>
     </div>
 
-    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()"><img id="lightbox-img" src=""></div>
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Project Preview" />
+    </div>
+
+    <div id="vim-cheatsheet" class="modal-overlay">
+      <div class="modal-content" style="max-width: 500px">
+        <div class="close-modal" onclick="toggleVimSheet()">
+          <i data-lucide="x-circle"></i>
+        </div>
+        <h2
+          class="gaming-font"
+          style="color: var(--accent); margin-bottom: 20px"
+        >
+          VIM_MODE // CHEATSHEET
+        </h2>
+        <div class="vim-grid">
+          <div class="vim-item">
+            <span class="vim-key">J</span> <span>Scroll Down</span>
+          </div>
+          <div class="vim-item">
+            <span class="vim-key">K</span> <span>Scroll Up</span>
+          </div>
+          <div class="vim-item">
+            <span class="vim-key">/</span> <span>Search Vault</span>
+          </div>
+          <div class="vim-item">
+            <span class="vim-key">?</span> <span>Toggle This Menu</span>
+          </div>
+          <div class="vim-item">
+            <span class="vim-key">ESC</span> <span>Close / Unfocus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="terminal-overlay" class="terminal-overlay hidden">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-title">
+            <i data-lucide="terminal-square"></i>
+            <span>LUZ_OS_TERMINAL_v4.1.exe</span>
+          </div>
+          <button
+            id="close-terminal"
+            class="terminal-close-btn"
+            aria-label="Close Terminal"
+          >
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-line">
+            Welcome to LUZ_OS v4.1 Interactive Shell.
+          </div>
+          <div class="terminal-line">
+            Type <span class="cmd-highlight">'help'</span> to see available
+            commands.
+          </div>
+          <div class="terminal-line"><br /></div>
+        </div>
+        <div class="terminal-input-area">
+          <span class="prompt-user">guest@luz_os:~$</span>
+          <input
+            type="text"
+            id="terminal-input"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Terminal Input"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      id="terminal-toggle-btn"
+      class="btn-terminal-fab"
+      aria-label="Open Terminal"
+    >
+      <i data-lucide="terminal"></i>
+    </button>
 
     <footer>
-        <div class="container" style="text-align: center; padding: 50px 0;">
-            <p class="gaming-font" style="font-size: 0.7rem; color: var(--text-secondary);">SYSTEM_VERSION: 4.1 // SYNC_COMPLETED</p>
-        </div>
+      <div class="container" style="text-align: center; padding: 50px 0">
+        <p
+          class="gaming-font"
+          style="font-size: 0.7rem; color: var(--text-secondary)"
+        >
+          SYSTEM_VERSION: 4.1 // SYNC_COMPLETED
+        </p>
+      </div>
     </footer>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
