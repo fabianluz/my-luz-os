@@ -34,7 +34,7 @@ const i18n = {
   },
 };
 
-// VISIBILITY OBSERVER
+// VISIBILITY OBSERVER: Unlocks sections when scrolling
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -220,8 +220,16 @@ async function loadGitHubLogs() {
 
   try {
     const res = await fetch(
-      `https://api.github.com/users/${user}/events?per_page=8`,
+      `https://api.github.com/users/${user}/events?per_page=10`,
     );
+
+    // 1. Handle Rate Limiting gracefully
+    if (res.status === 403 || res.status === 429) {
+      logContainer.innerHTML =
+        '<div class="log-entry" style="color:#eab308">[WARN] Connection Rate Limited. Cached Mode.</div>';
+      return;
+    }
+
     if (!res.ok) throw new Error("API Error");
     const data = await res.json();
 
@@ -240,13 +248,22 @@ async function loadGitHubLogs() {
           const commitCount = event.payload.commits
             ? event.payload.commits.length
             : 0;
-          msg = `Pushed ${commitCount} commits to <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
+
+          if (commitCount > 0) {
+            msg = `Pushed ${commitCount} commits to <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
+          } else {
+            // FIX: If 0 commits, call it a "Update" or "Sync"
+            msg = `Repository Update / Sync on <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
+          }
         } else if (event.type === "WatchEvent") {
           msg = `Starred repository <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
         } else if (event.type === "CreateEvent") {
           msg = `Created ${event.payload.ref_type || "repo"} <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
+        } else if (event.type === "ForkEvent") {
+          msg = `Forked <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
         } else {
-          msg = `${event.type} on <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
+          // Generic fallback for other events
+          msg = `${event.type.replace("Event", "").toUpperCase()} on <a href="https://github.com/${event.repo.name}" target="_blank" class="log-repo">${event.repo.name}</a>`;
         }
 
         const div = document.createElement("div");
@@ -254,7 +271,7 @@ async function loadGitHubLogs() {
         div.innerHTML = `<span class="log-time">[${date} ${time}]</span> <span class="log-type">${event.type.replace("Event", "").toUpperCase()}</span> ${msg}`;
         logContainer.appendChild(div);
         logContainer.scrollTop = logContainer.scrollHeight;
-      }, index * 300);
+      }, index * 200); // Faster typing speed
     });
   } catch (err) {
     logContainer.innerHTML =
