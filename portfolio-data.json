@@ -82,6 +82,21 @@
   "projects": [
     {
       "id": 1,
+      "title": "Fat Bender",
+      "tech": ["React", "PWA", "Tailwind CSS", "JavaScript"],
+      "images": ["fatbender1.png", "fatbender2.png"],
+      "desc": {
+        "en": "Clinical-grade body composition analyzer web app.",
+        "es": "Aplicación web de análisis de composición corporal de grado clínico."
+      },
+      "summary": {
+        "en": "Progressive Web App (PWA) utilizing the US Navy Circumference Method with visual calibration and advanced metrics like RFM and WHtR. Features multi-user management and local data persistence.",
+        "es": "Aplicación Web Progresiva (PWA) que utiliza el Método de Circunferencia de la Marina de EE. UU. con calibración visual y métricas avanzadas como RFM y WHtR. Incluye gestión multiusuario y persistencia local de datos."
+      },
+      "links": ["https://github.com/fabianluz/Fat-Bender"]
+    },
+    {
+      "id": 2,
       "title": "HevyStats Analytics",
       "tech": ["Back-end", "SQL", "JavaScript"],
       "images": ["hevystat1.png", "hevystat2.png"],
@@ -96,7 +111,7 @@
       "links": ["https://github.com/fabianluz/HevyStats"]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "OS AI Architect",
       "tech": ["OutSystems", "Python", "SQL", "AI"],
       "images": ["out1.png", "out2.png"],
@@ -111,7 +126,7 @@
       "links": ["https://github.com/fabianluz/outsystems-ai-architect"]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "OtakuDash",
       "tech": ["Python", "Front-end"],
       "images": ["animedashboard1.png"],
@@ -126,7 +141,7 @@
       "links": ["https://github.com/fabianluz/Anime-Dashboard"]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Kanban TUI",
       "tech": ["Go", "Back-end"],
       "images": ["TUI1.png"],
@@ -141,7 +156,7 @@
       "links": ["https://github.com/fabianluz/kanban-tui"]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "MathWizard Extension",
       "tech": ["C#", ".NET", "OutSystems ODC", "AI"],
       "images": ["image_3f90fc.png"],
@@ -156,7 +171,7 @@
       "links": ["https://github.com/fabianluz/MathWizard-ODC"]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "OutSystems AI Butler",
       "tech": ["React", "TypeScript", "OutSystems", "AI"],
       "images": ["butler_preview1.png"],
