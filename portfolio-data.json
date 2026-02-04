@@ -176,7 +176,7 @@
       "id": 6,
       "title": "MathWizard Extension",
       "tech": ["C#", ".NET", "OutSystems ODC", "AI"],
-      "images": ["assets/image_3f90fc.png"],
+      "images": ["assets/MathWizard1.png", "assets/MathWizard2.png"],
       "desc": {
         "en": "High-performance C# math extension for OutSystems Developer Cloud.",
         "es": "Extensión matemática de alto rendimiento en C# para OutSystems Developer Cloud."
