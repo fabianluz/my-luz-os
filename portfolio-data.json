@@ -197,10 +197,10 @@
         "es": "'Gemelo Digital' local para el desarrollo en OutSystems asistido por IA."
       },
       "summary": {
-        "en": "Parses Service Studio XML to visualize Data Models and Logic Flows. Exports structured, hallucination-free JSON context to supercharge LLM code generation.",
-        "es": "Analiza XML de Service Studio para visualizar Modelos de Datos y Flujos Lógicos. Exporta contexto JSON estructurado y libre de alucinaciones para potenciar la generación de código con LLMs."
+        "en": "Parses Service Studio information to visualize Data Models and Logic Flows. Exports structured, hallucination-free JSON context to supercharge LLM code generation.",
+        "es": "Analiza información de Service Studio para visualizar Modelos de Datos y Flujos Lógicos. Exporta contexto JSON estructurado y libre de alucinaciones para potenciar la generación de código con LLMs."
       },
-      "links": ["https://github.com/fabianluz/outsystems-ai-butler"]
+      "links": ["https://github.com/fabianluz/osai-butler"]
     }
   ]
 }

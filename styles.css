@@ -9,7 +9,7 @@
   --neon-glow: 0 0 10px rgba(8, 145, 178, 0.2);
   --glass-blur: 16px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  /* TERMINAL VARIABLES */
+ 
   --term-bg: rgba(10, 10, 15, 0.95);
   --term-header: #1e1e1e;
   --term-text: #00ff41;
@@ -60,7 +60,7 @@ h3,
   padding: 0 24px;
 }
 
-/* Navigation */
+
 nav {
   position: fixed;
   top: 20px;
@@ -95,7 +95,7 @@ nav {
   text-shadow: var(--neon-glow);
 }
 
-/* Buttons */
+
 .btn-ui {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -117,7 +117,7 @@ nav {
   box-shadow: var(--neon-glow);
 }
 
-/* Hero */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -133,7 +133,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-/* Visibility */
+
 section {
   padding: 100px 0;
   opacity: 0;
@@ -164,7 +164,7 @@ section.visible {
   transition: var(--transition);
 }
 
-/* Lists */
+
 .grid-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -183,7 +183,7 @@ section.visible {
   box-shadow: var(--neon-glow);
 }
 
-/* Project Vault */
+
 .vault-controls {
   display: flex;
   flex-direction: column;
@@ -239,7 +239,7 @@ section.visible {
   margin-right: 5px;
 }
 
-/* Modals */
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -281,7 +281,7 @@ section.visible {
   border: 2px solid var(--accent);
 }
 
-/* Hero Actions */
+
 .hero-actions {
   margin-top: 40px;
   display: flex;
@@ -354,7 +354,7 @@ section.visible {
   background: rgba(255, 0, 0, 0.1) !important;
 }
 
-/* Status Badge */
+
 .status-badge {
   display: inline-flex;
   align-items: center;
@@ -403,7 +403,7 @@ section.visible {
   }
 }
 
-/* Visualizer */
+
 .skill-tag {
   cursor: pointer;
   position: relative;
@@ -428,7 +428,7 @@ section.visible {
   background: rgba(34, 211, 238, 0.1);
 }
 
-/* TERMINAL OVERLAY */
+
 .btn-terminal-fab {
   position: fixed;
   bottom: 30px;
@@ -563,7 +563,7 @@ section.visible {
   caret-color: var(--term-text);
 }
 
-/* SYSTEM LOG (GitHub Activity) */
+
 .system-log-container {
   background: var(--term-bg);
   border: 1px solid #333;
@@ -632,7 +632,7 @@ section.visible {
   border-bottom-style: solid;
 }
 
-/* VIM CHEATSHEET */
+
 .vim-grid {
   display: grid;
   gap: 15px;
@@ -654,7 +654,7 @@ section.visible {
   border: 1px solid #333;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   nav .nav-links {
     display: none;
